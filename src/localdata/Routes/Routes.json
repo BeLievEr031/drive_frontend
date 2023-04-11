@@ -1,0 +1,8 @@
+[
+    {
+        "_id": 1,
+        "Name": "Auth Route",
+        "Description": "Route For the authentication",
+        "Route": "/auth"
+    }
+]
