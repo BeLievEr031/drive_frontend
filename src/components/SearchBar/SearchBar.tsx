@@ -30,7 +30,7 @@ function SearchBar() {
 
     useOutsideAlerter(wrapperRef)
     return (
-        <div className={`w-1/2 ${isFocus ? "border-2 rounded-2xl bg-white" : "rounded-full bg-blue-50"}`} ref={wrapperRef}>
+        <div className={`w-3/4 ${isFocus ? "border-2 rounded-2xl bg-white" : "rounded-full bg-blue-50"}`} ref={wrapperRef}>
             <div className='flex items-center my-2'>
                 <SearchIcon className='mx-2' />
                 <input type="text" className={`w-3/5 text-xl ${isFocus ? "bg-white" : "bg-blue-50"} outline-none`} placeholder='Search in Drive' onFocus={() => setTimeout(() => setIsFocus(true), 200)} value={search} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)} />
@@ -49,7 +49,6 @@ function SearchBar() {
                                 </span>
                             </div>
                         })
-
                     }
                 </div> : ""
             }
