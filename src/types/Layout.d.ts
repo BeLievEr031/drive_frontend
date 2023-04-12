@@ -1,0 +1,3 @@
+interface ILayoutProp{
+    children:any
+}
