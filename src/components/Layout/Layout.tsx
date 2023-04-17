@@ -1,11 +1,14 @@
 import React from 'react'
 import SideBar from '../SideBar/SideBar'
 import Navbar from '../Navbar/Navbar'
+import { useMemo } from 'react'
 
 function Layout({ children }: ILayoutProp) {
+    const NavbarMemo = useMemo(() => <Navbar />, []);
     return (
         <div>
-            <Navbar />
+            {/* Memoized Navbar */}
+            {NavbarMemo}
             <div className='flex mt-6'>
                 <div className='w-[20%] mt-6'>
                     <div className='w-full'>

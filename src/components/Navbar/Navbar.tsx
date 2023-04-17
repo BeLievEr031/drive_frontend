@@ -6,6 +6,8 @@ import Avatar, { genConfig } from 'react-nice-avatar'
 
 function Navbar() {
     const config = genConfig({ sex: "man", hairStyle: "thick" })
+    console.log("navbar");
+
     return (
         <>
             <div className='flex p-4 w-full justify-between '>
