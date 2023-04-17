@@ -8,8 +8,8 @@ function Navbar() {
     const config = genConfig({ sex: "man", hairStyle: "thick" })
     return (
         <>
-            <div className='flex p-4 w-full justify-between'>
-                <div className='flex w-3/4 justify-between'>
+            <div className='flex p-4 w-full justify-between '>
+                <div className='flex w-3/4 justify-between absolute z-10'>
                     <div>
                         <div className='flex items-center'>
                             <img src={logo} alt="" />
@@ -18,7 +18,7 @@ function Navbar() {
                     </div>
                     <SearchBar />
                 </div>
-                <div>
+                <div className='absolute right-4'>
                     <Avatar style={{ width: '50px', height: '50px' }} {...config} />
                 </div>
             </div>

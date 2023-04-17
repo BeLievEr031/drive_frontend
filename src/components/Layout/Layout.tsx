@@ -6,14 +6,14 @@ function Layout({ children }: ILayoutProp) {
     return (
         <div>
             <Navbar />
-            <div className='flex'>
-                <div className='w-[20%]'>
+            <div className='flex mt-6'>
+                <div className='w-[20%] mt-6'>
                     <div className='w-full'>
                         <SideBar />
                     </div>
                 </div>
-                <div>
-                    <div className='p-2'>
+                <div className='mt-4'>
+                    <div className='p-2 absolute w-[80%] -z-10'>
                         {children}
                     </div>
                 </div>
